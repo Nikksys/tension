@@ -1,0 +1,9 @@
+<%= DateTime.now.strftime("Date actuelle: %m/%d/%Y il est %H:%M") %>
+
+
+<h1>Nouvelle Prise</h1>
+
+
+<%= render 'form', prise: @prise %>
+
+<%= link_to 'Back', prises_path %>

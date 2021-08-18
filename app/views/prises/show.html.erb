@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Moment:</strong>
+  <%= @prise.moment %>
+</p>
+
+<p>
+  <strong>Sys:</strong>
+  <%= @prise.sys %>
+</p>
+
+<p>
+  <strong>Dia:</strong>
+  <%= @prise.dia %>
+</p>
+
+<p>
+  <strong>Pulse:</strong>
+  <%= @prise.pulse %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @prise.note %>
+</p>
+
+<%= link_to 'Edit', edit_prise_path(@prise) %> |
+<%= link_to 'Back', prises_path %>

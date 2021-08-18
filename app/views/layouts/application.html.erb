@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tension</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <a href="/">TENSION</a>
+      </div>
+      <div class="menu">
+        <%=link_to( "Prises", prises_path) %>
+        <p style="display: inline-block; margin: 0 20px; color: white;">|</p>
+        <%=link_to( "Nouvelle prise", new_prise_path) %>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

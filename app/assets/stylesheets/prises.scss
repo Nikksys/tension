@@ -1,0 +1,27 @@
+// Place all the styles related to the Prises controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+// index //
+
+.periode{
+  width: 50px;
+}
+
+#reading{
+  border-collapse: collapse;
+}
+
+#reading th{
+  border-bottom: solid 2px;
+}
+
+.table-icon{
+  width: 15px;
+}
+
+.table-icon-del{
+  width: 10px;
+  margin-bottom: 1px;
+}

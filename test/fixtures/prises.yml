@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  moment: 2021-08-17 10:52:53
+  sys: 1
+  dia: 1
+  pulse: 1
+  note: MyText
+
+two:
+  moment: 2021-08-17 10:52:53
+  sys: 1
+  dia: 1
+  pulse: 1
+  note: MyText
