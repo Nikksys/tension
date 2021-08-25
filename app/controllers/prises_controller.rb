@@ -3,7 +3,7 @@ class PrisesController < ApplicationController
 
   # GET /prises or /prises.json
   def index
-    @prises = Prise.all
+    @prises = Prise.all.order(:moment)
   end
 
   # GET /prises/1 or /prises/1.json

@@ -1,3 +1,4 @@
+<%= console %>
 <%= form_with(model: prise, local: true) do |form| %>
   <% if prise.errors.any? %>
     <div id="error_explanation">
@@ -13,7 +14,11 @@
 
   <div class="field">
     <%= form.label :moment %>
-    <%= form.datetime_select :moment %>
+    <% Time.use_zone("Bogota") do %>
+      <%= form.datetime_select :moment%>
+    <% end %>
+    
+
   </div>
 
   <div class="field">
